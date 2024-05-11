@@ -45,6 +45,9 @@ namespace Labirinto
                 MessageBox.Show("Resposta Errada",
                     "Vai precisa de ajuda?",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+
+                txtResposta.Text = "";
+                txtResposta.Focus();
             }
             else
             {
