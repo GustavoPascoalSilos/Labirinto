@@ -32,11 +32,14 @@
             btnDireita6 = new Button();
             btnBaixo6 = new Button();
             btnEsquerda6 = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // btnCima6
             // 
-            btnCima6.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCima6.FlatAppearance.BorderSize = 0;
+            btnCima6.FlatStyle = FlatStyle.Flat;
+            btnCima6.Font = new Font("Showcard Gothic", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnCima6.Location = new Point(364, 12);
             btnCima6.Name = "btnCima6";
             btnCima6.Size = new Size(73, 43);
@@ -47,7 +50,9 @@
             // 
             // btnDireita6
             // 
-            btnDireita6.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDireita6.FlatAppearance.BorderSize = 0;
+            btnDireita6.FlatStyle = FlatStyle.Flat;
+            btnDireita6.Font = new Font("Showcard Gothic", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnDireita6.Location = new Point(715, 203);
             btnDireita6.Name = "btnDireita6";
             btnDireita6.Size = new Size(73, 43);
@@ -57,7 +62,9 @@
             // 
             // btnBaixo6
             // 
-            btnBaixo6.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBaixo6.FlatAppearance.BorderSize = 0;
+            btnBaixo6.FlatStyle = FlatStyle.Flat;
+            btnBaixo6.Font = new Font("Showcard Gothic", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnBaixo6.Location = new Point(364, 385);
             btnBaixo6.Name = "btnBaixo6";
             btnBaixo6.Size = new Size(73, 43);
@@ -68,7 +75,9 @@
             // 
             // btnEsquerda6
             // 
-            btnEsquerda6.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnEsquerda6.FlatAppearance.BorderSize = 0;
+            btnEsquerda6.FlatStyle = FlatStyle.Flat;
+            btnEsquerda6.Font = new Font("Showcard Gothic", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnEsquerda6.Location = new Point(12, 203);
             btnEsquerda6.Name = "btnEsquerda6";
             btnEsquerda6.Size = new Size(73, 43);
@@ -77,12 +86,23 @@
             btnEsquerda6.UseVisualStyleBackColor = true;
             btnEsquerda6.Click += btnEsquerda6_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Showcard Gothic", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(335, 188);
+            label1.Name = "label1";
+            label1.Size = new Size(122, 43);
+            label1.TabIndex = 6;
+            label1.Text = "SALA 6";
+            // 
             // frmSalaSeis
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.MenuHighlight;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(btnEsquerda6);
             Controls.Add(btnBaixo6);
             Controls.Add(btnDireita6);
@@ -90,6 +110,7 @@
             Name = "frmSalaSeis";
             Text = "frmSalaSeis";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -98,5 +119,6 @@
         private Button btnDireita6;
         private Button btnBaixo6;
         private Button btnEsquerda6;
+        private Label label1;
     }
 }

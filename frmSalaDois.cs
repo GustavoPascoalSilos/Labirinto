@@ -43,5 +43,16 @@ namespace Labirinto
 
             frmSalaTres.Show();
         }
+
+        private void btnDireita_Click(object sender, EventArgs e)
+        {
+            frmSalaCinco frmSalaCinco = new frmSalaCinco();
+
+            this.Hide();
+
+            frmSalaCinco.Closed += (object s, EventArgs ev) => this.Show();
+
+            frmSalaCinco.Show();
+        }
     }
 }

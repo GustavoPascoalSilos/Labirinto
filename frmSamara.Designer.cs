@@ -37,7 +37,7 @@
             pictureBox1.Image = Properties.Resources.samara;
             pictureBox1.Location = new Point(-12, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(813, 451);
+            pictureBox1.Size = new Size(1383, 824);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -46,10 +46,11 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1368, 803);
             Controls.Add(pictureBox1);
             Name = "frmSamara";
             Text = "frmSamara";
+            Load += frmSamara_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }

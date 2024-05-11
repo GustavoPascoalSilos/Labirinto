@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             btnIniciar = new Button();
+            btnVitoria = new Button();
             SuspendLayout();
             // 
             // btnIniciar
@@ -37,7 +38,7 @@
             btnIniciar.Cursor = Cursors.Hand;
             btnIniciar.FlatAppearance.BorderSize = 0;
             btnIniciar.FlatStyle = FlatStyle.Flat;
-            btnIniciar.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnIniciar.Font = new Font("Showcard Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point);
             btnIniciar.Location = new Point(284, 154);
             btnIniciar.Name = "btnIniciar";
             btnIniciar.Size = new Size(220, 139);
@@ -46,12 +47,25 @@
             btnIniciar.UseVisualStyleBackColor = false;
             btnIniciar.Click += btnIniciar_Click;
             // 
+            // btnVitoria
+            // 
+            btnVitoria.BackColor = Color.DarkCyan;
+            btnVitoria.FlatAppearance.BorderSize = 0;
+            btnVitoria.FlatStyle = FlatStyle.Flat;
+            btnVitoria.Location = new Point(766, 455);
+            btnVitoria.Name = "btnVitoria";
+            btnVitoria.Size = new Size(94, 38);
+            btnVitoria.TabIndex = 1;
+            btnVitoria.UseVisualStyleBackColor = false;
+            btnVitoria.Click += btnVitoria_Click;
+            // 
             // frmPortal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cyan;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(778, 465);
+            Controls.Add(btnVitoria);
             Controls.Add(btnIniciar);
             Name = "frmPortal";
             Text = "frmPortal";
@@ -61,5 +75,6 @@
         #endregion
 
         private Button btnIniciar;
+        private Button btnVitoria;
     }
 }

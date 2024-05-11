@@ -58,5 +58,7 @@ namespace Labirinto
 
             frmSalaSeis.Show();
         }
+
+
     }
 }

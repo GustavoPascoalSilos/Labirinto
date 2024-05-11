@@ -39,5 +39,27 @@ namespace Labirinto
 
             frmSaidaFalsa.Show();
         }
+
+        private void btnDireita3_Click(object sender, EventArgs e)
+        {
+            frmQuestão frmQuestão = new frmQuestão();
+
+            this.Hide();
+
+            frmQuestão.Show();
+
+            frmQuestão.Closed += (object s, EventArgs ev) => this.Show();
+        }
+
+        private void btnCima3_Click(object sender, EventArgs e)
+        {
+            frmPortal frmPortal = new frmPortal();
+
+            this.Hide();
+
+            frmPortal.Show();
+
+            frmPortal.Closed += (object s, EventArgs ev) => this.Show();
+        }
     }
 }

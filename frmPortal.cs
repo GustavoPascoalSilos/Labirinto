@@ -21,12 +21,24 @@ namespace Labirinto
         {
             //Criando uma instancia para um novo formulário
             frmSalaUm frmSalaum = new frmSalaUm();
-            
+
             this.Hide();
 
             frmSalaum.Closed += (object s, EventArgs ev) => this.Show();
 
             frmSalaum.ShowDialog();
+        }
+
+        private void btnVitoria_Click(object sender, EventArgs e)
+        {
+            frmSalaQuatro frmSalaQuatro = new frmSalaQuatro();
+
+            this.Hide();
+
+            frmSalaQuatro.Closed += (object s, EventArgs ev) => this.Show();
+
+
+            frmSalaQuatro.Show();
         }
     }
 }

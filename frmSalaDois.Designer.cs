@@ -32,11 +32,14 @@
             btnDireita = new Button();
             btnBaixo = new Button();
             btnEsquerda2 = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // btnCima
             // 
-            btnCima.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCima.FlatAppearance.BorderSize = 0;
+            btnCima.FlatStyle = FlatStyle.Flat;
+            btnCima.Font = new Font("Showcard Gothic", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnCima.Location = new Point(355, 12);
             btnCima.Name = "btnCima";
             btnCima.Size = new Size(73, 43);
@@ -47,18 +50,23 @@
             // 
             // btnDireita
             // 
-            btnDireita.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDireita.FlatAppearance.BorderSize = 0;
+            btnDireita.FlatStyle = FlatStyle.Flat;
+            btnDireita.Font = new Font("Showcard Gothic", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnDireita.Location = new Point(715, 204);
             btnDireita.Name = "btnDireita";
             btnDireita.Size = new Size(73, 43);
             btnDireita.TabIndex = 5;
             btnDireita.Text = "→";
             btnDireita.UseVisualStyleBackColor = true;
+            btnDireita.Click += btnDireita_Click;
             // 
             // btnBaixo
             // 
-            btnBaixo.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            btnBaixo.Location = new Point(355, 395);
+            btnBaixo.FlatAppearance.BorderSize = 0;
+            btnBaixo.FlatStyle = FlatStyle.Flat;
+            btnBaixo.Font = new Font("Showcard Gothic", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBaixo.Location = new Point(355, 385);
             btnBaixo.Name = "btnBaixo";
             btnBaixo.Size = new Size(73, 43);
             btnBaixo.TabIndex = 6;
@@ -68,7 +76,9 @@
             // 
             // btnEsquerda2
             // 
-            btnEsquerda2.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnEsquerda2.FlatAppearance.BorderSize = 0;
+            btnEsquerda2.FlatStyle = FlatStyle.Flat;
+            btnEsquerda2.Font = new Font("Showcard Gothic", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnEsquerda2.Location = new Point(12, 204);
             btnEsquerda2.Name = "btnEsquerda2";
             btnEsquerda2.Size = new Size(73, 43);
@@ -77,12 +87,23 @@
             btnEsquerda2.UseVisualStyleBackColor = true;
             btnEsquerda2.MouseEnter += btnEsquerda2_MouseEnter;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Showcard Gothic", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(329, 188);
+            label1.Name = "label1";
+            label1.Size = new Size(120, 43);
+            label1.TabIndex = 8;
+            label1.Text = "SALA 2";
+            // 
             // frmSalaDois
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lime;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(btnEsquerda2);
             Controls.Add(btnBaixo);
             Controls.Add(btnDireita);
@@ -90,6 +111,7 @@
             Name = "frmSalaDois";
             Text = "frmSalaDois";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -98,5 +120,6 @@
         private Button btnDireita;
         private Button btnBaixo;
         private Button btnEsquerda2;
+        private Label label1;
     }
 }
